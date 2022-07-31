@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Prata&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply font-primary text-base font-normal mx-auto;
+    @apply font-primary text-base font-normal mx-auto  bg-primary text-whiteLight;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    max-width: 1440px;
+    max-width: 1660px;
   }
   input {
     @apply outline-none;
@@ -21,4 +21,30 @@ a {
 
 img {
   @apply w-full h-full max-w-full object-cover object-center cursor-pointer;
+}
+
+.header-sidebar {
+  @apply flex items-center gap-x-8 lg:gap-x-12;
+}
+
+// Mobile : Iphong 12 Pro <-
+@media screen and (max-width: 767.98px) {
+  .header-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 20px 25px;
+    z-index: 2;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in;
+    @apply bg-whiteMedium shadow-md;
+    &.is-expand {
+      transform: translateX(0);
+    }
+  }
 }

@@ -4,7 +4,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        primary: ["Poppins", "sans-serif;"],
+        primary: ["Prata", "sans-serif;"],
+        secondary: ["DM Sans", "sans-serif;"],
+      },
+      colors: {
+        primary: "#222120",
+        secondary: "#F8F3ED",
+        whiteLight: "#FAF5EF",
+        whiteBase: "#fff",
+        whiteMedium: "#F8F3ED",
       },
     },
   },

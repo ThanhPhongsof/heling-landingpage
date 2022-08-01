@@ -1,5 +1,6 @@
 import { Layout } from "components/layout";
 import { About } from "module/about";
+import { Blogs } from "module/blogs";
 import type { NextPage } from "next";
 
 const Home: NextPage = () => {
@@ -8,6 +9,7 @@ const Home: NextPage = () => {
       <Layout>
         <main>
           <About></About>
+          <Blogs></Blogs>
         </main>
       </Layout>
     </>

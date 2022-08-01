@@ -22,7 +22,7 @@ const Header = () => {
   } = useClickOutSide("button");
 
   return (
-    <header className="mb-24 md:mb-64">
+    <header className="min-h-[936px]">
       <LayoutContainer>
         <div className="flex items-center md:justify-between pt-11">
           <LogoDefault></LogoDefault>
@@ -50,43 +50,55 @@ const Header = () => {
         <div className="h-[1px] w-full border border-[#FAFAFA] border-opacity-30  my-1"></div>
       </div>
       <LayoutContainer>
-        <div className="flex items-center pt-[155px] gap-8">
-          <div className="w-full max-w-[725px]">
-            <h1 className="text-whiteLight text-[82px] leading-[81px] tracking-tighter">
-              We make
-              <span className="block">
-                <span className="opcaity-0 invisible">We</span>
-                every room
-              </span>
-              <span className="block">
-                <span className="opcaity-0 invisible">We</span>a unique shape
-              </span>
-            </h1>
-            <div className="w-full max-w-[407px] ml-auto mt-16">
-              <picture>
-                <source
-                  srcSet="./assets/images/headline-2.png"
-                  type="image/webp"
-                />
-                <img
-                  className="mb-11"
-                  src="./assets/images/headline-2.png"
-                  alt="headline-2"
-                />
-              </picture>
-              <p className="text-whiteBase text-opacity-50 text-xl font-secondary text-left">
-                Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam
-                faucibus laoreet tellus nam. Gravida solor aenean orci,
-                facilisis senectus.
-              </p>
+        <div className="pt-20 md:pt-[102px]">
+          <div className="flex flex-col-reverse md:flex-row  gap-8 min-h-[705px]">
+            <div className="w-full md:max-w-[470px] 2xl:max-w-[725px]">
+              <h1 className="text-whiteLight text-[51px] leading-[63px] tracking-tighter">
+                We make
+                <span className="block">
+                  <span className="hidden md:inline-block md:opcaity-0 md:invisible">
+                    We
+                  </span>
+                  every room
+                </span>
+                <span className="block">
+                  <span className="hidden md:opcaity-0 md:invisible">We</span>a
+                  unique shape
+                </span>
+              </h1>
+              <div className="w-full ml-auto mt-11 md:mt-16">
+                <picture>
+                  <source
+                    srcSet="./assets/images/headline-2.png"
+                    type="image/webp"
+                  />
+                  <img
+                    className="mb-11"
+                    src="./assets/images/headline-2.png"
+                    alt="headline-2"
+                  />
+                </picture>
+                <p className="text-whiteBase text-opacity-50 text-xl font-secondary text-left">
+                  Lorem ipsum onsectetur adipiscing elit. Blandit mauris etiam
+                  faucibus laoreet tellus nam. Gravida solor aenean orci,
+                  facilisis senectus.
+                </p>
+              </div>
+              <img
+                srcSet="./assets/images/img-2.png 2x"
+                className="hidden md:block max-w-[184px] max-h-[232px] translate-x-0 translate-y-[150px]"
+              />
             </div>
-            <img
-              srcSet="./assets/images/img-2.png 2x"
-              className="max-w-[184px] h-full translate-x-0 translate-y-[78px]"
-            />
-          </div>
-          <div className="">
-            <img srcSet="./assets/images/img-1.png 2x" className="" />
+            <div className="relative">
+              <img
+                srcSet="./assets/images/img-2.png 2x"
+                className="absolute block md:hidden max-w-[150px] max-h-[188px] translate-x-[150%] translate-y-[100%]"
+              />
+              <img
+                srcSet="./assets/images/img-1.png 2x"
+                className="f-full pr-8"
+              />
+            </div>
           </div>
         </div>
       </LayoutContainer>

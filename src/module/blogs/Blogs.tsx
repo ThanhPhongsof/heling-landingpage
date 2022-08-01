@@ -3,7 +3,7 @@ import React from "react";
 
 const Blogs = () => {
   return (
-    <section className="blogs  pt-20 md:pt-40 pb-[120px] bg-secondary">
+    <section className="blogs  mt-20 md:mt-40 mb-[120px] bg-secondary">
       <LayoutContainer>
         <div className="flex items-center  text-primary  gap-x-[73px] lg:gap-x-[238px] mb-[72px] lg:mb-28 leading-4">
           <h2 className="text-[32px] leading-[28px] lg:text-7xl text-left mb-5 lg:mb-0 lg:whitespace-nowrap">
